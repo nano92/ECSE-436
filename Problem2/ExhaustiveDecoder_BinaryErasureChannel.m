@@ -23,7 +23,8 @@ for p_erasure = 0:0.05:1
     %For performance testing purposes, it generates 20 codewords with
     %erasures. Since this is a (8, 4, 4) Hamming code, the exhaustive
     %decoder can only fix (d_min - 1) = 3 erasures, thus all codewords having 
-    %3 or less bits erased out of 8
+    %3 or less bits erased out of 8.  It is important to mention that it has been
+	%observed that some codewords having d_min erasures are fixed
     y = BinaryErasureChannel(c, p_erasure);
     numOfErasures = sum(y(:) == 0.5);
     counter = 0;
