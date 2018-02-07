@@ -12,7 +12,7 @@ c = mod(m*G,2);
 %Codebook
 message_bits =  de2bi((0:15) , 'left-msb');
 parity_bits = mod(message_bits * P, 2);
-codebook = horzcat(message_bits, parity_bits);
+codebook = horzcat(message_bits, parity_bits)
 
  %Syndrome Table:
  H = horzcat(P, eye(4));
