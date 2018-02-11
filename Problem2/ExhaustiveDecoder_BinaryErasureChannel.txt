@@ -1,0 +1,36 @@
+%ECSE 436, Lab 1 
+%Group 7: Amanda Bianco and Luis Gallet
+%Problem 2, part b) and c)
+
+Exhaustive Decoder with a binary erasure channel
+
+For performance testing purposes, it generates 20 codewords with
+erasures. Since this is a (8, 4, 4) Hamming code, the exhaustive
+decoder can only fix (d_min - 1) = 3 erasures, thus all codewords having 
+3 or less bits erased out of 8.  It is important to mention that it has been
+observed that some codewords having d_min erasures are fixed
+
+Output example
+- only 10 out of 20 codewords could be fixed
+
+1) 0.0 0.0 1.0 1.0 1.0 1.0 0.0 0.0 decoded to 0 0 1 1 1 1 0 0
+number of erasures was: 0
+2) 0.0 0.0 1.0 1.0 1.0 1.0 0.0 0.0 decoded to 0 0 1 1 1 1 0 0
+number of erasures was: 0
+3) 0.0 0.0 1.0 1.0 1.0 1.0 0.0 0.0 decoded to 0 0 1 1 1 1 0 0
+number of erasures was: 0
+4) 0.0 0.0 1.0 1.0 0.5 0.5 0.0 0.0 decoded to 0 0 1 1 1 1 0 0
+number of erasures was: 2
+5) 0.0 0.0 0.5 1.0 0.5 1.0 0.0 0.5 decoded to 0 0 1 1 1 1 0 0
+number of erasures was: 3
+6) 0.0 0.5 0.5 0.5 1.0 0.5 0.0 0.0 decoded to 0 0 1 1 1 1 0 0
+number of erasures was: 4
+7) 0.0 0.0 1.0 1.0 1.0 1.0 0.0 0.0 decoded to 0 0 1 1 1 1 0 0
+number of erasures was: 0
+8) 0.0 0.0 1.0 1.0 1.0 0.5 0.0 0.5 decoded to 0 0 1 1 1 1 0 0
+number of erasures was: 2
+9) 0.0 0.0 1.0 0.5 0.5 0.5 0.5 0.0 decoded to 0 0 1 1 1 1 0 0
+number of erasures was: 4
+10) 0.0 0.5 1.0 0.5 0.5 1.0 0.0 0.0 decoded to 0 0 1 1 1 1 0 0
+number of erasures was: 3
+

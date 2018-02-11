@@ -1,4 +1,6 @@
-clear;
+%ECSE 436, Lab 1 
+%Group 7: Amanda Bianco and Luis Gallet
+%Problem 1, second question of part b)
 
 %Codebook generation
 P = [1 1 1 0; 1 1 0 1; 1 0 1 1; 0 1 1 1];
@@ -29,4 +31,4 @@ d_min = min(bitDiffList);
 temp_list = (bitDiffList == d_min);
 %Counting the number of 1's gives the number of codeword pairs at a
 %distance d_min
-out = sum(temp_list(:))
+out = sum(temp_list(:));

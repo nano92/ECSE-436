@@ -1,0 +1,40 @@
+ECSE 436, Lab 1 
+Group 7: Amanda Bianco and Luis Gallet
+Problem 1, part a) second question and part b)
+
+Problem 1, part a) second question
+
+Here d_min was verified by comparing each codeword pair and getting their
+difference
+
+codebook =
+
+     0     0     0     0     0     0     0     0
+     0     0     0     1     0     1     1     1
+     0     0     1     0     1     0     1     1
+     0     0     1     1     1     1     0     0
+     0     1     0     0     1     1     0     1
+     0     1     0     1     1     0     1     0
+     0     1     1     0     0     1     1     0
+     0     1     1     1     0     0     0     1
+     1     0     0     0     1     1     1     0
+     1     0     0     1     1     0     0     1
+     1     0     1     0     0     1     0     1
+     1     0     1     1     0     0     1     0
+     1     1     0     0     0     0     1     1
+     1     1     0     1     0     1     0     0
+     1     1     1     0     1     0     0     0
+     1     1     1     1     1     1     1     1
+
+
+d_min =
+
+     4
+
+Part b)
+
+There are 112 codeword pairs at distance d_min = 4. For a detailed explanation 
+on how this result was calculated, refer to Problem1Apart2_1B.m
+out =
+
+   112

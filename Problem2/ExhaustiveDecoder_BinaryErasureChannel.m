@@ -1,4 +1,6 @@
-%Problem 2B and 2C
+%ECSE 436, Lab 1 
+%Group 7: Amanda Bianco and Luis Gallet
+%Problem 2, part b) and c)
 
 %Source:
 p_1 = 1/2;
